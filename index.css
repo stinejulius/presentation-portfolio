@@ -1,0 +1,70 @@
+/* This is a CSS document */
+
+/* Main Introduction */
+¨ #introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
+    margin-top: 120px;
+    margin-bottom: 122px;
+}
+
+#introduction-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 120px;
+}
+
+#introduction-headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 112px;
+}
+
+#introduction-headline h3 {
+    width: 254px;
+    text-align: center;
+}
+
+
+/* Main Introduction Path */
+#front-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 15px;
+    margin-top: 122px;
+    margin-bottom: 60px;
+}
+
+.image-side-aligned {
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+
+.fp-textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    border-radius: 10px;
+    background: #DBD1AD;
+    padding: 15px;
+
+    flex: 0 1 76.92%;
+}
+
+.fp-textbox h4 {
+    line-height: 100%;
+}
+
+.textbox-right {
+    display: flex;
+    justify-content: flex-end;
+}
