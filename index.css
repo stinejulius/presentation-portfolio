@@ -115,3 +115,39 @@
     background-color: #093409;
     color: #F2EFDE;
 }
+
+/* Front page illustrations - mountains */
+
+#mountains {
+    position: relative;
+    left: 50%;
+    width: 0;
+}
+
+#left-mountains {
+    position: absolute;
+    bottom: 45px;
+    right: -43px;
+    z-index: 2;
+}
+
+#right-mountains {
+    position: absolute;
+    bottom: 31px;
+    left: -66px;
+    z-index: 3;
+}
+
+#path-position {
+    position: relative;
+    left: 50%;
+    width: 0;
+}
+
+#path {
+    position: absolute;
+    top: -46px;
+    left: -175px;
+    z-index: -5;
+}
+
