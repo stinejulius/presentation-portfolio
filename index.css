@@ -1,6 +1,11 @@
 /* This is a CSS document */
 
 /* Main Introduction */
+
+main {
+    overflow: hidden;
+}
+
 ¨ #introduction {
     display: flex;
     flex-direction: column;
