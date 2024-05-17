@@ -45,3 +45,20 @@
     padding-bottom: 30px;
     max-width: 762px;
 }
+
+
+/* Flower decoration */
+
+.about-flower-decoration {
+    display: flex;
+    justify-content: center;
+}
+
+.flowers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30.76%;
+    padding: 50px 120px;
+    max-width: 450px;
+}
