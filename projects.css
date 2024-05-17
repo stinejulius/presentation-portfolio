@@ -60,6 +60,14 @@
     width: 100%;
 }
 
+.box-bodytext {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    background-color: #DBD1AD;
+}
+
 .project-box-arrow-down {
     display: flex;
     padding: 15px 0;
