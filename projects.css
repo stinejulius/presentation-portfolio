@@ -71,3 +71,10 @@
 }
 
 
+/* Call to action button -> specific style on button is in base.css*/
+
+#projects-cta {
+    display: flex;
+    justify-content: center;
+    padding: 60px 15px;
+}
