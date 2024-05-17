@@ -1,4 +1,5 @@
-/* This is a CSS document */
+/* CSS Document */
+
 
 /* Main Introduction */
 
@@ -38,6 +39,7 @@ main {
 
 
 /* Main Introduction Path */
+
 #front-page-content {
     display: flex;
     flex-direction: column;
@@ -74,6 +76,7 @@ main {
     justify-content: flex-end;
 }
 
+
 /* Front page call to action */
 
 #fp-call-to-action {
@@ -91,12 +94,12 @@ main {
 .cta-button {
     /* Neutralize the default styles on the semantic tag button */
     background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 
     /* Button style */
     display: flex;
@@ -121,7 +124,8 @@ main {
     color: #F2EFDE;
 }
 
-/* Front page illustrations - mountains */
+
+/* Front page illustrations - mountains and path */
 
 #mountains {
     position: relative;
@@ -155,4 +159,3 @@ main {
     left: -175px;
     z-index: -5;
 }
-
