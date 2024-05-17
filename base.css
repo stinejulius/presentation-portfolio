@@ -168,7 +168,7 @@ footer {
     gap: 25px;
 }
 
-#footer-contact-information div {
+.footer-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
