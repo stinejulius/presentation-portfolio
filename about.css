@@ -62,3 +62,121 @@
     padding: 50px 120px;
     max-width: 450px;
 }
+
+
+/* Qualifications section */
+
+#about-qualifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 15px;
+}
+
+#qualifications-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 762px;
+    width: 100%;
+    gap: 60px;
+}
+
+.qualifications-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #093409;
+    color: #F2EFDE;
+}
+
+.qualifications-box img {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Hobbies section */
+
+.about-hobbies {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    align-items: center;
+    gap: 60px;
+}
+
+.hobbies-box {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    max-width: 762px;
+    height: 630px;
+
+    background-color: #DBD1AD;
+    border-radius: 10px;
+}
+
+.hobbies-box div img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.img-and-icons {
+    position: relative;
+}
+
+.img-icons-dots {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+}
+
+.dot1 {
+    top: 10%;
+    left: 10%;
+}
+
+.dot2 {
+    top: 30%;
+    left: 20%;
+}
+
+.dot3 {
+    top: 40%;
+    left: 50%;
+}
+
+.dot4 {
+
+}
+
+
+
+
+
+
+
+
+.img-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-icons-arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* .img-icons-dots {
+    display: flex;
+    gap: 15px;
+} */
