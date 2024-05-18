@@ -1,1 +1,38 @@
 /* CSS Document */
+
+
+main {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    gap: 60px;
+}
+
+
+/* Intro Contact section */
+
+#intro-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 15px;
+}
+
+#flowers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30.76%;
+    min-width: 120px;
+    max-width: 450px;
+}
+
+#contact-headlines {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    width: 92.30%;
+    max-width: 762px;
+}
