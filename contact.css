@@ -48,8 +48,8 @@ main {
     justify-content: center;
 }
 
-/* > means only 1 level in */
 #contact-box>div {
+    /* > means only 1 level in */
     display: flex;
     padding: 15px;
     justify-content: center;
@@ -74,4 +74,18 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+
+/* Picture */
+
+#contact-picture {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+#contact-picture img {
+    width: 100%;
+    max-width: 762px;
 }
