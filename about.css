@@ -57,7 +57,7 @@
 
 .flowers {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
     justify-content: space-between;
     width: 30.76%;
     padding: 50px 120px;
@@ -83,7 +83,7 @@
     gap: 60px;
 }
 
-.qualifications-box {
+.quali-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,12 +93,12 @@
     color: #F2EFDE;
 }
 
-.qualifications-box img {
+.quali-top img {
     display: flex;
     justify-content: center;
 }
 
-.quali-middle-box {
+.quali-middle {
     display: flex;
     flex-direction: column;
     padding: 15px;
