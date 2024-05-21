@@ -113,6 +113,10 @@
     max-width: 375px;
 }
 
+.quali-programs img {
+    border-radius: 12px;
+}
+
 .quali-bottom {
     display: flex;
     justify-content: flex-end;
