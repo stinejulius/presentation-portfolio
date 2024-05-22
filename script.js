@@ -36,7 +36,7 @@ function onDocumentClick(event) {
 }
 
 
-//------------------------------------------------ Projects fold out ---------------------------------------------------
+//---------------------------------------------- Projects article fold out -------------------------------------------------
 
 // Find projects, this will contain x amount of project Elements (project-box from HTML)
 let projects = document.getElementsByClassName("project-box");
@@ -65,42 +65,62 @@ function onProjectClick(project) {
 
 //------------------------------------------- Qualifications article fold out ----------------------------------------------
 
-// The variable takes the class .qualifications and references it in JavaScript
+// The variable takes the class .qualification and references it in JavaScript
 let qualifications = document.getElementsByClassName("qualification");
 
 
 // For quali-top
-for (let quali of qualifications) {
+for (let qualification of qualifications) {
 
-    let qualiTopArrows = quali.getElementsByClassName("quali-top");
+    let qualiTopArrows = qualification.getElementsByClassName("quali-top");
 
     // Because there only is 1 arrow its 0 - it always counts from 0 and up
     let qualiTopArrow = qualiTopArrows[0];
 
     qualiTopArrow.addEventListener("click", function (event) {
-        onQualiClick(quali);
+        onQualiClick(qualification);
     });
 }
 
 
 // For quali-bottom
-for (let quali of qualifications) {
+for (let qualification of qualifications) {
 
-    let qualiBottomArrows = quali.getElementsByClassName("quali-bottom");
+    let qualiBottomArrows = qualification.getElementsByClassName("quali-bottom");
 
     // Because there only is 1 arrow its 0 - it always counts from 0 and up
     let qualiBottomArrow = qualiBottomArrows[0];
 
     qualiBottomArrow.addEventListener("click", function (event) {
-        onQualiClick(quali);
+        onQualiClick(qualification);
     });
 }
 
 // Turns on the class .active in CSS
-function onQualiClick(quali) {
-    quali.classList.toggle("active");
+function onQualiClick(qualification) {
+    qualification.classList.toggle("active");
 }
 
 
-//------------------------------------------------ Hobbies slide view --------------------------------------------------
+//-------------------------------------------- Hobbies article fold out --------------------------------------------------
 
+// The variable takes the class .about-hobby-box and references it in JavaScript
+let hobbies = document.getElementsByClassName("about-hobby-box")
+
+// For about-box-arrow-down
+for (let hobby of hobbies) {
+
+    let hobbyArrows = hobby.getElementsByClassName("about-box-arrow-down");
+
+    // Because there only is 1 arrow its 0 - it always counts from 0 and up
+    let hobbyArrow = hobbyArrows[0];
+
+    hobbyArrow.addEventListener("click", function (event) {
+        onHobbyClick(hobby);
+    });
+}
+
+// Turns on the class .active in CSS
+function onHobbyClick(hobby) {
+    hobby.classList.toggle("active");
+}
