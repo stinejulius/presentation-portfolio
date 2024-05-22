@@ -65,7 +65,7 @@ h5 {
     margin: 0;
 }
 
-/* ID for bold body inside paragraph */
+/* Class for bold body inside paragraph */
 .bold-body {
     font-size: 15px;
     font-weight: 700;
@@ -100,10 +100,42 @@ header {
 header img {
     height: 45px;
     z-index: 20;
+    cursor: pointer;
 }
 
-header a {
+.logo {
     height: 45px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+
+    background-color: #247022;
+    color: #F2EFDE;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+/* Element with both .menu and .active classes */
+/* .active is added through Javascript */
+.menu.active {
+    display: flex;
+}
+
+.menu-link {
+    display: flex;
+    padding: 35px 15px;
+    border-bottom: 2px solid #093409;
+}
+
+.menu-link:last-child {
+    border-bottom: unset;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */

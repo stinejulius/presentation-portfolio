@@ -12,15 +12,39 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
+        <a class="logo" href="index.html">
             <img src="assets/illustrations/logo.svg" alt="Stine Julius logo">
         </a>
-        <img src="assets/illustrations/menu.svg" alt="Burger Menu">
+        <img id="header-menu-js" src="assets/illustrations/menu.svg" alt="Burger Menu">
+        <div id="header-menu-content-js" class="menu">
+            <a class="menu-link" href="index.html">
+                <h3>
+                    Forside
+                </h3>
+            </a>
+            <a class="menu-link" href="projects.html">
+                <h3>
+                    Projekter
+                </h3>
+            </a>
+            <a class="menu-link" href="about.html">
+                <h3>
+                    Om mig
+                </h3>
+            </a>
+            <a class="menu-link" href="contact.html">
+                <h3>
+                    Kontakt
+                </h3>
+            </a>
+        </div>
     </header>
+
 
     <main>
         <section id="intro-projects">
@@ -35,7 +59,7 @@
 
         <section id="projects">
             <!-- Prototype -->
-            <div class="project-box">
+            <article class="project-box">
                 <div class="project-box-headline">
                     <h3>Prototype - Landsbyens Fortællinger</h3>
                 </div>
@@ -65,10 +89,10 @@
                 <div class="project-box-arrow-down">
                     <img src="assets/illustrations/keyboard_arrow_down.svg" alt="Arrow down">
                 </div>
-            </div>
+            </article>
 
             <!-- Animation -->
-            <div class="project-box">
+            <article class="project-box">
                 <div class="project-box-headline">
                     <h3>Animation Waterdroplet</h3>
                 </div>
@@ -96,10 +120,10 @@
                 <div class="project-box-arrow-down">
                     <img src="assets/illustrations/keyboard_arrow_down.svg" alt="Arrow down">
                 </div>
-            </div>
+            </article>
 
             <!-- Selfportrait -->
-            <div class="project-box">
+            <article class="project-box">
                 <div class="project-box-headline">
                     <h3>Selvportræt</h3>
                 </div>
@@ -120,10 +144,10 @@
                 <div class="project-box-arrow-down">
                     <img src="assets/illustrations/keyboard_arrow_down.svg" alt="Arrow down">
                 </div>
-            </div>
+            </article>
 
             <!-- Poster -->
-            <div class="project-box">
+            <article class="project-box">
                 <div class="project-box-headline">
                     <h3>Plakat - Landsbyens Fortællinger</h3>
                 </div>
@@ -153,10 +177,10 @@
                 <div class="project-box-arrow-down">
                     <img src="assets/illustrations/keyboard_arrow_down.svg" alt="Arrow down">
                 </div>
-            </div>
+            </article>
 
             <!-- Product photo -->
-            <div class="project-box">
+            <article class="project-box">
                 <div class="project-box-headline">
                     <h3>Produktbillede</h3>
                 </div>
@@ -175,10 +199,10 @@
                 <div class="project-box-arrow-down">
                     <img src="assets/illustrations/keyboard_arrow_down.svg" alt="Arrow down">
                 </div>
-            </div>
+            </article>
 
             <!-- MovingArt -->
-            <div class="project-box">
+            <article class="project-box">
                 <div class="project-box-headline">
                     <h3>MovingArt</h3>
                 </div>
@@ -201,7 +225,7 @@
                 <div class="project-box-arrow-down">
                     <img src="assets/illustrations/keyboard_arrow_down.svg" alt="Arrow down">
                 </div>
-            </div>
+            </article>
         </section>
 
         <!-- Call to action button -->

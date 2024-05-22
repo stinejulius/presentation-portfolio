@@ -99,7 +99,7 @@
 }
 
 .quali-middle {
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 15px;
     gap: 15px;
@@ -118,13 +118,31 @@
 }
 
 .quali-bottom {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     padding: 15px;
 
     background-color: #093409;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+    /* Active */
+.qualification.active .quali-top {
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
+}
+
+.qualification.active .quali-top img {
+    display: none;
+}
+
+.qualification.active .quali-middle {
+    display: flex;
+}
+
+.qualification.active .quali-bottom {
+    display: flex;
 }
 
 
