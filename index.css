@@ -1,7 +1,7 @@
 /* CSS Document */
 
 
-/* Main Introduction */
+/* ----------Main Introduction---------- */
 
 main {
     overflow: hidden;
@@ -38,25 +38,32 @@ main {
 }
 
 
-/* Main Introduction Path */
+/* ----------Main Introduction Path---------- */
 #front-page-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 122px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+#front-page-content-box {
+    padding: 0 15px;
+    max-width: 1320px;
     display: flex;
     flex-direction: column;
     gap: 60px;
-    padding: 0 15px;
-    margin-top: 122px;
-    margin-bottom: 60px;
 }
 
 .image-side-aligned {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0 60px 0 0px;
 }
 
 .index-image {
     width: 100%;
-    max-width: 762px;
+    max-width: 750px;
     border-radius: 10px;
 }
 
@@ -81,8 +88,7 @@ main {
     justify-content: flex-end;
 }
 
-
-/* Front page call to action */
+/* ----------Front page call to action---------- */
 
 #fp-call-to-action {
     display: flex;
@@ -97,7 +103,7 @@ main {
 }
 
 
-/* Front page illustrations - mountains and path */
+/* ----------Front page illustrations - mountains and path---------- */
 
 #mountains {
     position: relative;
@@ -130,4 +136,100 @@ main {
     top: -46px;
     left: -175px;
     z-index: -5;
+}
+
+/* Circle and mountains for desktop */
+#mountains-desktop {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    top: 274px;
+    flex-shrink: 0;
+    z-index: -10;
+    width: 100%;
+}
+
+/* Path for desktop */
+#path-position-desktop {
+    position: relative;
+    left: 50%;
+    width: 0;
+}
+
+#path-desktop {
+    display: none;
+    position: absolute;
+    left: -558px;
+    top: -130px;
+    z-index: -15;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+/* Media Query */
+
+@media only screen and (min-width: 992px) {
+
+    /* ----------Introduction path and mountains for desktop---------- */
+
+    #mountains-desktop {
+        display: flex;
+    }
+
+    /* Removes mobile mountains */
+    #mountains {
+        display: none;
+    }
+
+    #path-position {
+        display: none;
+    }
+
+    #path-desktop {
+        display: unset;
+    }
+
+
+    /* ----------Introduction---------- */
+    #introduction-headline h3 {
+        width: 100%;
+    }
+
+    #introduction {
+        padding: 400px 0 280px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 212px;
+    }
+
+    #introduction-title {
+        gap: 24px;
+        padding-top: unset;
+    }
+
+    #introduction-headline {
+        padding: unset;
+    }
+
+    /* ----------Front page content---------- */
+    #front-page-content {
+        margin-top: 68px;
+        margin-bottom: 140px;
+    }
+
+    #front-page-content-box {
+        gap: 212px;
+        padding: 0 24px;
+    }
+
+    #image-side-aligned {}
+
+    /* ----------Front page call to action---------- */
+    #fp-call-to-action {
+        gap: 70px;
+    }
+
+    #fp-headline {
+        width: 100%;
+    }
 }

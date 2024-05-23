@@ -17,58 +17,60 @@
 
 <body>
     <header>
-        <a class="logo" href="index.html">
-            <img src="assets/illustrations/logo.svg" alt="Stine Julius logo">
-        </a>
+        <section id="header-box">
+            <a class="logo" href="index.html">
+                <img src="assets/illustrations/logo.svg" alt="Stine Julius logo">
+            </a>
 
-        <!-- Desktop -->
-        <nav id="menu-desktop">
-            <a class="desktop-menu-text" href="index.html">
-                <h3>
-                    Forside
-                </h3>
-            </a>
-            <a class="desktop-menu-text" href="projects.html">
-                <h3>
-                    Projekter
-                </h3>
-            </a>
-            <a class="desktop-menu-text" href="about.html">
-                <h3>
-                    Om mig
-                </h3>
-            </a>
-            <a class="desktop-menu-text" href="contact.html">
-                <h3>
-                    Kontakt
-                </h3>
-            </a>
-        </nav>
+            <!-- Desktop -->
+            <nav id="menu-desktop">
+                <a id="menu-selected" class="desktop-menu-text" href="index.html">
+                    <h3>
+                        Forside
+                    </h3>
+                </a>
+                <a class="desktop-menu-text" href="projects.html">
+                    <h3>
+                        Projekter
+                    </h3>
+                </a>
+                <a class="desktop-menu-text" href="about.html">
+                    <h3>
+                        Om mig
+                    </h3>
+                </a>
+                <a class="desktop-menu-text" href="contact.html">
+                    <h3>
+                        Kontakt
+                    </h3>
+                </a>
+            </nav>
 
-        <!-- Mobile -->
-        <img id="header-menu-js" src="assets/illustrations/menu.svg" alt="Burger Menu">
-        <nav id="header-menu-content-js" class="menu">
-            <a class="menu-link" href="index.html">
-                <h3>
-                    Forside
-                </h3>
-            </a>
-            <a class="menu-link" href="projects.html">
-                <h3>
-                    Projekter
-                </h3>
-            </a>
-            <a class="menu-link" href="about.html">
-                <h3>
-                    Om mig
-                </h3>
-            </a>
-            <a class="menu-link" href="contact.html">
-                <h3>
-                    Kontakt
-                </h3>
-            </a>
-        </nav>
+            <!-- Mobile -->
+            <img id="header-menu-js" src="assets/illustrations/menu.svg" alt="Burger Menu">
+            <nav id="header-menu-content-js" class="menu">
+                <a class="menu-link" href="index.html">
+                    <h3>
+                        Forside
+                    </h3>
+                </a>
+                <a class="menu-link" href="projects.html">
+                    <h3>
+                        Projekter
+                    </h3>
+                </a>
+                <a class="menu-link" href="about.html">
+                    <h3>
+                        Om mig
+                    </h3>
+                </a>
+                <a class="menu-link" href="contact.html">
+                    <h3>
+                        Kontakt
+                    </h3>
+                </a>
+            </nav>
+        </section>
     </header>
 
     <main>
@@ -83,7 +85,16 @@
         </section>
 
         <section id="introduction-path">
+            <!-- For desktop -->
+            <div id="mountains-desktop">
+                <img src="assets/illustrations/circle-mountains.svg" alt="vector cirle and mountains">
+            </div>
 
+            <div id="path-position-desktop">
+                <img id="path-desktop" src="assets/illustrations/big-path.svg" alt="Big swinging path illustration">
+            </div>
+
+            <!-- For mobile -->
             <div id="mountains">
                 <img id="left-mountains" src="assets/illustrations/left-mountains.svg"
                     alt="Vector mountain illustration">
@@ -96,66 +107,76 @@
             </div>
 
             <div id="front-page-content">
-
-                <div class="image-side-aligned">
-                    <img class="index-image" src="assets/images/profilepicture-studio.webp" alt="Profilbillede af Stine Julius">
-                </div>
-
-                <div class="textbox-right">
-                    <div class="fp-textbox">
-                        <h4>HVEM ER JEG?</h4>
-                        <p>Mit navn er Stine, og jeg brænder for design i alle dens afskygninger.</p>
-                        <p>Gennem hele mit liv har jeg været fascineret af
-                            <span class="bold-body">kreativitet, udvikling og mangfoldige ideer.</span>
-                            Som barn blev kreativiteten brugt i leg, og personligt tror jeg på, at den legende tilgang
-                            hører
-                            til, selv her i voksenlivet. Legen skaber bevægelse, nye ideer og forlænger horisonten inden
-                            for
-                            multimedieverdenen.
-                        </p>
-                        <p>Jeg arbejder på at forstørre mit repertoire både med nye projekter og nye værktøjer og nyder
-                            at
-                            få et projekt til at spille.
-                            <span class="bold-body">Mon jeg kan blive en del af dit teams fremtidige projekter?</span>
-                        </p>
+                <div id="front-page-content-box">
+                    <div class="image-side-aligned">
+                        <img class="index-image" src="assets/images/profilepicture-studio.webp"
+                            alt="Profilbillede af Stine Julius">
                     </div>
-                </div>
 
-                <div class="image-side-aligned">
-                    <img class="index-image" src="assets/images/profilepicture-forest-back.webp" alt="Profilbillede af Stine Julius">
-                </div>
-
-                <div class="textbox-right">
-                    <div class="fp-textbox">
-                        <h4>HVEM ER DU?</h4>
-                        <p>Arbejder du i et firma med et fast designteam, og leder du tilfældigvis efter den sidste brik
-                            til
-                            teamet?
-                            <span class="bold-body">Så er du kommet til det rette sted.</span>
-                        </p>
-                        <p>Jeg har styr på webdesign, digitalt design, og
-                            <span class="bold-body">min værktøjskasse er fyldt med gode sager.</span>
-                            Med mig
-                            på holdet kommer vi helt i mål med et
-                            <span class="bold-body">stærkt samarbejde</span>
-                            og en god tilgang til projekterne. Jeg
-                            sætter pris på ærlighed og vidensdeling i et team for at nå frem til det bedste resultat for
-                            brugerne og for virksomheden.
-                        </p>
-                        <p>Hvis jeg endnu ikke har fanget din interesse, så se endelig et udsnit af mine tidligere
-                            projekter
-                            og lær lidt mere om mine færdigheder inden for multimediedesign.
-                        </p>
+                    <div class="textbox-right">
+                        <div class="fp-textbox">
+                            <h4>HVEM ER JEG?</h4>
+                            <p>Mit navn er Stine, og jeg brænder for design i alle dens afskygninger.</p>
+                            <p>Gennem hele mit liv har jeg været fascineret af
+                                <span class="bold-body">kreativitet, udvikling og mangfoldige ideer.</span>
+                                Som barn blev kreativiteten brugt i leg, og personligt tror jeg på, at den legende
+                                tilgang
+                                hører
+                                til, selv her i voksenlivet. Legen skaber bevægelse, nye ideer og forlænger horisonten
+                                inden
+                                for
+                                multimedieverdenen.
+                            </p>
+                            <p>Jeg arbejder på at forstørre mit repertoire både med nye projekter og nye værktøjer og
+                                nyder
+                                at
+                                få et projekt til at spille.
+                                <span class="bold-body">Mon jeg kan blive en del af dit teams fremtidige
+                                    projekter?</span>
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <div id="fp-call-to-action">
-                    <h3 id="fp-headline">Er du interesseret i et godt samarbejde?</h3>
-                    <a href="contact.html" class="cta-button">
+                    <div class="image-side-aligned">
+                        <img class="index-image" src="assets/images/profilepicture-forest-back.webp"
+                            alt="Profilbillede af Stine Julius">
+                    </div>
+
+                    <div class="textbox-right">
+                        <div class="fp-textbox">
+                            <h4>HVEM ER DU?</h4>
+                            <p>Arbejder du i et firma med et fast designteam, og leder du tilfældigvis efter den sidste
+                                brik
+                                til
+                                teamet?
+                                <span class="bold-body">Så er du kommet til det rette sted.</span>
+                            </p>
+                            <p>Jeg har styr på webdesign, digitalt design, og
+                                <span class="bold-body">min værktøjskasse er fyldt med gode sager.</span>
+                                Med mig
+                                på holdet kommer vi helt i mål med et
+                                <span class="bold-body">stærkt samarbejde</span>
+                                og en god tilgang til projekterne. Jeg
+                                sætter pris på ærlighed og vidensdeling i et team for at nå frem til det bedste resultat
+                                for
+                                brugerne og for virksomheden.
+                            </p>
+                            <p>Hvis jeg endnu ikke har fanget din interesse, så se endelig et udsnit af mine tidligere
+                                projekter
+                                og lær lidt mere om mine færdigheder inden for multimediedesign.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="fp-call-to-action">
+                        <h3 id="fp-headline">Er du interesseret i et godt samarbejde?</h3>
+                        <a href="contact.html" class="cta-button">
                             <h3>KONTAKT</h3>
-                    </a>
-                        
+                        </a>
+
+                    </div>
                 </div>
+
             </div>
         </section>
     </main>
@@ -198,7 +219,7 @@
                     <img src="assets/illustrations/logo.svg" alt="Stine Julius logo">
                 </a>
                 <h5>© 2024 Stine Julius | Hibiscusvej 20 | 5200 Odense V</h5>
-            </div> 
+            </div>
         </section>
     </footer>
 </body>

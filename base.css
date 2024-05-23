@@ -86,16 +86,23 @@ a {
 /* Header */
 header {
     display: flex;
-    height: 70px;
-    padding: 0px 15px;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     position: sticky;
     top: 0px;
 
     background: #093409;
-
     z-index: 20;
+}
+
+#header-box {
+    max-width: 1320px;
+    display: flex;
+    height: 70px;
+    padding: 0px 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
 }
 
 header img {
@@ -137,6 +144,11 @@ header img {
     color: #247022;
 }
 
+/* ----------Menu point selected---------- */
+#menu-selected h3 {
+    color: #81C730;
+}
+
 /* Element with both .menu and .active classes */
 /* .active is added through Javascript */
 .menu.active {
@@ -168,7 +180,7 @@ header img {
 
     /* Button style */
     display: flex;
-    width: 92.30%;
+    width: 100%;
     max-width: 500px;
     height: 49px;
     justify-content: center;
@@ -276,52 +288,50 @@ footer {
 /* Media Query - headerstyles, header and footer*/
 
 @media only screen and (min-width: 992px) {
-    
-    body
 
     /* ----------Fonts and headlines---------- */
 
     h1 {
-        font-size: 28px;
+        font-size: 70px;
         letter-spacing: 28px;
     }
-    
+
     /* H2 text - subtitle*/
     h2 {
-        font-size: 20px;
+        font-size: 40px;
         letter-spacing: 12px;
     }
-    
+
     /* H3 text - headline*/
     h3 {
         font-size: 24px;
         letter-spacing: 1.2px;
     }
-    
+
     /* H4 text - bold body*/
     h4 {
         font-size: 16px;
         letter-spacing: 0.8px;
     }
-    
+
     /* Body text */
     p {
         font-size: 16px;
         letter-spacing: 0.8px;
     }
-    
+
     /* h5 text - bottom footer*/
     h5 {
         font-size: 14px;
         letter-spacing: 0.7px;
     }
-    
+
     /* Class for bold body inside paragraph */
     .bold-body {
         font-size: 16px;
         letter-spacing: 0.8px;
     }
-    
+
 
     /* ----------Header section---------- */
 
@@ -335,6 +345,14 @@ footer {
 
     header {
         padding: 0 24px;
+    }
+
+    #header-box {
+        height: 80px;
+    }
+
+    .logo, .logo img {
+        height: 64px;
     }
 
     /* ----------Footer section---------- */
@@ -363,7 +381,7 @@ footer {
         height: 20px;
         width: 20px;
     }
-    
+
     #footer-nav {
         flex-direction: column;
         gap: 24px;
@@ -377,6 +395,7 @@ footer {
     #bottom-footer {
         height: 80px;
         justify-content: center;
+        padding: unset;
     }
 
     #bottom-footer-box {
@@ -387,5 +406,10 @@ footer {
 
     #bottom-footer-box a {
         display: flex;
+    }
+
+    /* ----------CTA button---------- */
+    .cta-button {
+        max-width: 424px;
     }
 }
