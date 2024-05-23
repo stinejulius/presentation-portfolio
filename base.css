@@ -122,6 +122,10 @@ header img {
 
 }
 
+#menu-desktop {
+    display: none;
+}
+
 /* Element with both .menu and .active classes */
 /* .active is added through Javascript */
 .menu.active {
@@ -229,4 +233,90 @@ footer {
     gap: 10px;
 
     background: #093409;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* Media Query - headerstyles, header and footer*/
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-family: Jost;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 11.2px;
+        margin: 0;
+    }
+    
+    /* H2 text - subtitle*/
+    h2 {
+        font-family: Jost;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 6px;
+        margin: 0;
+    }
+    
+    /* H3 text - headline*/
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin: 0;
+    }
+    
+    /* H4 text - bold body*/
+    h4 {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 200%;
+        /* 30px */
+        letter-spacing: 0.75px;
+        margin: 0;
+    }
+    
+    /* Body text */
+    p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 200%;
+        /* 30px */
+        letter-spacing: 0.75px;
+        margin: 0;
+    }
+    
+    /* h5 text - bottom footer*/
+    h5 {
+        color: #F2EFDE;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.6px;
+        margin: 0;
+    }
+    
+    /* Class for bold body inside paragraph */
+    .bold-body {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 200%;
+        /* 30px */
+        letter-spacing: 0.75px;
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #menu-desktop {
+        display: flex;
+        gap: 60px;
+        color: white;
+    }
+
+    #header-menu-js {
+        display: none;
+    }
 }
