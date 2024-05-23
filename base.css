@@ -78,6 +78,7 @@ h5 {
 a {
     text-decoration: none;
     color: inherit;
+    line-height: 200%;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -124,6 +125,16 @@ header img {
 
 #menu-desktop {
     display: none;
+    gap: 60px;
+    color: #F2EFDE;
+}
+
+.desktop-menu-text:hover {
+    color: #81C730;
+}
+
+.desktop-menu-text:active {
+    color: #247022;
 }
 
 /* Element with both .menu and .active classes */
@@ -187,13 +198,19 @@ footer {
 /* Top footer */
 #top-footer {
     display: flex;
+    justify-content: center;
+    background: #247022;
+    color: #F2EFDE;
+}
+
+#top-footer-box {
+    display: flex;
+    padding: 40px 15px;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding: 40px 0;
-
-    background: #247022;
-    color: #F2EFDE;
+    width: 100%;
+    max-width: 1320px;
 }
 
 #footer-contact-information {
@@ -212,7 +229,7 @@ footer {
 
 #footer-nav {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -221,6 +238,10 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+}
+
+#top-footer h4 {
+    display: none;
 }
 
 /* Bottom footer */
@@ -235,88 +256,136 @@ footer {
     background: #093409;
 }
 
+#bottom-footer-box {
+    display: flex;
+    padding: 0 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1320px;
+}
+
+#bottom-footer-box a {
+    display: none;
+    height: 64px;
+}
+
 
 /* ------------------------------------------------------------------------------------------------------- */
 
 /* Media Query - headerstyles, header and footer*/
 
 @media only screen and (min-width: 992px) {
+    
+    body
+
+    /* ----------Fonts and headlines---------- */
+
     h1 {
-        font-family: Jost;
         font-size: 28px;
-        font-weight: 700;
-        letter-spacing: 11.2px;
-        margin: 0;
+        letter-spacing: 28px;
     }
     
     /* H2 text - subtitle*/
     h2 {
-        font-family: Jost;
         font-size: 20px;
-        font-weight: 300;
-        letter-spacing: 6px;
-        margin: 0;
+        letter-spacing: 12px;
     }
     
     /* H3 text - headline*/
     h3 {
-        font-size: 20px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin: 0;
+        font-size: 24px;
+        letter-spacing: 1.2px;
     }
     
     /* H4 text - bold body*/
     h4 {
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 200%;
-        /* 30px */
-        letter-spacing: 0.75px;
-        margin: 0;
+        font-size: 16px;
+        letter-spacing: 0.8px;
     }
     
     /* Body text */
     p {
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 200%;
-        /* 30px */
-        letter-spacing: 0.75px;
-        margin: 0;
+        font-size: 16px;
+        letter-spacing: 0.8px;
     }
     
     /* h5 text - bottom footer*/
     h5 {
-        color: #F2EFDE;
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: 0.6px;
-        margin: 0;
+        font-size: 14px;
+        letter-spacing: 0.7px;
     }
     
     /* Class for bold body inside paragraph */
     .bold-body {
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 200%;
-        /* 30px */
-        letter-spacing: 0.75px;
-        margin: 0;
+        font-size: 16px;
+        letter-spacing: 0.8px;
     }
     
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+
+    /* ----------Header section---------- */
 
     #menu-desktop {
         display: flex;
-        gap: 60px;
-        color: white;
     }
 
     #header-menu-js {
         display: none;
+    }
+
+    header {
+        padding: 0 24px;
+    }
+
+    /* ----------Footer section---------- */
+
+    #top-footer h4 {
+        display: unset;
+    }
+
+    #top-footer-box {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 24px;
+    }
+
+    #footer-contact-information {
+        align-items: flex-start;
+    }
+
+    .footer-contact {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-contact img {
+        height: 20px;
+        width: 20px;
+    }
+    
+    #footer-nav {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    #footer-nav div {
+        gap: 24px;
+    }
+
+
+    #bottom-footer {
+        height: 80px;
+        justify-content: center;
+    }
+
+    #bottom-footer-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 24px;
+    }
+
+    #bottom-footer-box a {
+        display: flex;
     }
 }
