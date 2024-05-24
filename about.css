@@ -57,7 +57,7 @@
 
 .flowers {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     justify-content: space-between;
     width: 30.76%;
     padding: 50px 120px;
@@ -127,7 +127,7 @@
     border-bottom-right-radius: 10px;
 }
 
-    /* Active */
+/* Active */
 .qualification.active .quali-top {
     border-bottom-left-radius: unset;
     border-bottom-right-radius: unset;
@@ -149,6 +149,13 @@
 /* Hobbies section */
 
 #about-hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+#about-hobbies-boxes {
     display: flex;
     flex-direction: column;
     padding: 0 15px;
@@ -207,7 +214,7 @@
     cursor: pointer;
 }
 
-    /* Active */
+/* Active */
 .about-hobby-box.active .hobby-bodytext {
     display: flex;
 }
@@ -232,4 +239,142 @@
     flex-direction: column;
     text-align: center;
     gap: 15px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+/* Media Query */
+
+@media only screen and (min-width: 992px) {
+
+    /* ----------Intro About---------- */
+    #intro-about {
+        margin-top: 280px;
+        margin-bottom: 200px;
+        padding: 0 24px;
+        gap: 140px;
+    }
+
+    #intro-about img {
+        max-width: 848px;
+    }
+
+    /* ----------About Text Section---------- */
+    #about-text-section {
+        padding: unset;
+        gap: 80px;
+    }
+
+    #about-headline {
+        padding-top: 80px;
+        gap: 24px;
+    }
+
+    #about-text {
+        padding-bottom: 80px;
+        gap: 48px;
+        max-width: 848px;
+    }
+
+    /* ----------About Flower Decoration Section---------- */
+    .flowers {
+        width: 100%;
+        padding: 90px 0;
+        max-width: 424px;
+    }
+
+    .flowers img {
+        height: 80px;
+    }
+
+    /* ----------About Qualifications Section---------- */
+    #about-qualifications {
+        gap: 140px;
+        padding: 0 24px;
+    }
+
+    #qualifications-content {
+        max-width: 848px;
+        gap: 72px;
+    }
+
+    .quali-top {
+        padding: 24px;
+    }
+
+    .quali-top img {
+        width: 46px;
+        height: 27px;
+    }
+
+    .quali-middle {
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .quali-programs {
+        justify-content: flex-start;
+        width: 100%;
+        gap: 48px;
+    }
+
+    .quali-programs img {
+        width: 72px;
+        height: 72px;
+    }
+
+    .quali-bottom {
+        padding: 24px;
+    }
+
+    .quali-bottom img {
+        width: 46px;
+        height: 27px;
+    }
+
+    /* ----------About Hobbies---------- */
+
+    #about-hobbies {
+        gap: 140px;
+    }
+
+    #about-hobbies-boxes {
+        padding: 0 24px;
+        gap: 140px;
+    }
+
+    .about-hobby-box {
+        max-width: 848px;
+    }
+
+    .hobby-box-headline {
+        padding-top: 24px;
+    }
+
+    .about-box-image {
+        padding: 24px;
+    }
+
+    .hobby-bodytext {
+        padding: 24px;
+    }
+
+    .about-box-arrow-down {
+        padding: 24px 0;
+    }
+
+    .about-box-arrow-down img {
+        width: 46px;
+        height: 27px;
+    }
+
+    /* ----------CTA Section---------- */
+    #about-cta {
+        gap: 140px;
+        padding: 140px 24px;
+    }
+
+    #about-cta-headline {
+        gap: 24px;
+    }
 }
