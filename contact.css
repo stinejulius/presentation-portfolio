@@ -88,4 +88,68 @@ main {
 #contact-picture img {
     width: 100%;
     max-width: 762px;
+    border-radius: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+/* Media Query */
+
+@media only screen and (min-width: 992px) {
+
+    /* ----------Main---------- */    
+    main {
+        margin-top: unset;
+        margin-bottom: unset;
+        padding-top: 280px;
+        padding-bottom: 140px;
+        gap: 140px;
+
+        background-image: url(assets/illustrations/flower-pattern.svg);
+        background-position: top 0px left calc(50% + 103px);
+        background-repeat: repeat;
+    }
+
+    /* ----------Intro Contacts Section---------- */
+    #intro-contact {
+        padding: 0 24px;
+        gap: 140px;
+    }
+
+    #flowers {
+        display: none;
+    }
+
+    #contact-headlines {
+        gap: 24px;
+        width: 100%;
+        max-width: 848px;
+    }
+
+    /* ----------Contact Box Section---------- */
+    #contact-box>div {
+        /* > means only 1 level in */
+        padding: 24px 0;
+        margin: unset;
+        width: 100%;
+        max-width: 848px;
+        gap: 96px;
+    }
+
+    #column-1 {
+        gap: 24px;
+    }
+
+    #column-2 {
+        gap: 24px;
+    }
+
+    /* ----------Contact Picture Section---------- */
+    #contact-picture {
+        padding: 0 24px;
+    }
+
+    #contact-picture img {
+        max-width: 848px;
+    }
 }
