@@ -6,7 +6,6 @@
 #intro-projects {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 60px;
     margin-bottom: 120px;
@@ -20,14 +19,47 @@
 }
 
 
+/* Leaf Band Section */
+
+#leaves {
+    display: none;
+    justify-content: center;
+    margin: 120px 0;
+}
+
+#leaf-band {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1272px;
+    padding: 0 24px;
+}
+
+.leaf-cluster {
+    display: flex;
+    gap: 24px;
+}
+
 /* Projects section */
 
 #projects {
+    display: flex;
+    justify-content: center;
+}
+
+#projects-content {
     display: flex;
     flex-direction: column;
     padding: 0 15px;
     gap: 120px;
     align-items: center;
+}
+
+.projects-double-module {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    align-items: flex-start;
 }
 
 .project-box {
@@ -96,4 +128,65 @@
     display: flex;
     justify-content: center;
     padding: 60px 15px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+/* Media Query */
+
+@media only screen and (min-width: 992px) {
+
+    /* ----------Intro Projects Section---------- */
+
+    #intro-projects {
+        margin-top: 280px;
+        margin-bottom: unset;
+        gap: 140px;
+    }
+
+    #projects-description {
+        padding: 0 24px;
+        max-width: 848px;
+    }
+
+    /* ----------Leaves---------- */
+
+    #leaves {
+        display: flex;
+    }
+
+    .leaf-cluster img {
+        min-height: 30px;
+    }
+
+    /* ----------Projects---------- */
+
+    #projects-content {
+        padding: 0 24px;
+        gap: 212px;
+        width: 100%;
+        max-width: 1320px;
+    }
+
+    .projects-double-module {
+        flex-direction: row;
+        gap: 24px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .project-box {
+        max-width: 576px;
+        min-width: 520px;
+    }
+
+    /* Relates to JavaScript - only this height when it is active */
+    .project-box.active .box-bodytext {
+        height: 504px;
+    }
+
+    /* ----------CTA button---------- */
+    #projects-cta {
+        padding: 140px 24px;
+    }
 }

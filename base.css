@@ -349,6 +349,7 @@ footer {
 
     #header-box {
         height: 80px;
+        padding: unset;
     }
 
     .logo, .logo img {
