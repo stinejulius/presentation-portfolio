@@ -67,6 +67,7 @@
     flex-direction: column;
     width: 100%;
     max-width: 762px;
+    height: 100%;
 }
 
 .project-box-headline {
@@ -86,6 +87,8 @@
     justify-content: center;
     padding: 15px;
     background: #247022;
+    flex-grow: 1;
+    aspect-ratio: 1 / 1;
 }
 
 .box-image {
@@ -112,26 +115,10 @@
     cursor: pointer;
 }
 
-/* For video project */
+/* For animation and moving art project */
 .project-box-image video {
-    height: 544px;
     background-color: #F2EFDE;
     border-radius: 10px;
-}
-
-/* For animation project */
-.project-animation-waterdrop {
-    width: 750px;
-    height: 544px;
-    background: url('assets/images/project-animation.png') 0 0 no-repeat;
-    animation: project-animation-waterdrop 2.5s steps(18) infinite;
-    background-color: #F2EFDE;
-    border-radius: 10px;
-}
-
-@keyframes project-animation-waterdrop {
-    0% {background-position: -175px;}
-    100% {background-position: -13675px;}
 }
 
     /* Active */
@@ -156,7 +143,7 @@
 
 /* Media Query */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1222px) {
 
     /* ----------Intro Projects Section---------- */
 
