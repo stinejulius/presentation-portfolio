@@ -1,7 +1,7 @@
 /* CSS Document */
 
 
-/* Introduction Projects section*/
+/* =============== Main - Introduction Projects Section =============== */
 
 #intro-projects {
     display: flex;
@@ -19,7 +19,7 @@
 }
 
 
-/* Leaves Section */
+/* =============== Main - Leaves Section =============== */
 
 #leaves {
     display: none;
@@ -40,7 +40,8 @@
     gap: 24px;
 }
 
-/* Projects section */
+
+/* =============== Main - Projects Section =============== */
 
 #projects {
     display: flex;
@@ -86,7 +87,7 @@
     justify-content: center;
     padding: 15px;
     background: #247022;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1; /* Same height and width */
 }
 
 .box-image {
@@ -113,14 +114,14 @@
     cursor: pointer;
 }
 
-/* For animation and moving art project */
+/* For Animation and MovingArt projects */
 .project-box-image video {
     background-color: #F2EFDE;
     border-radius: 10px;
 }
 
-    /* Active */
-    /* Here .box-bodytext gets targeted if .project-box and .active is on an element above */
+/* Active */
+/* Here .box-bodytext gets targeted if .project-box and .active is on an element above */
 .project-box.active .box-bodytext {
     display: flex;
 }
@@ -129,21 +130,22 @@
 }
 
 
-/* Call to action button -> the specific style on button is in base.css*/
+/* =============== Main - CTA Button =============== */
 
+/* The specific style on button is in base.css */
 #projects-cta {
     display: flex;
     justify-content: center;
     padding: 60px 15px;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------------- */
 
-/* Media Query */
+/* ======================================================================================================================== */
+/* =============== Media Query ===============*/
 
-@media only screen and (min-width: 1222px) {
+@media only screen and (min-width: 1222px) /* New pixel size - fit better with contents */ {
 
-    /* ----------Intro Projects Section---------- */
+    /* ---------- Main - Introduction Projects Section (desktop) ---------- */
 
     #intro-projects {
         margin-top: 280px;
@@ -156,7 +158,8 @@
         max-width: 848px;
     }
 
-    /* ----------Leaves---------- */
+
+    /* ---------- Main - Leaves Section (desktop) ---------- */
 
     #leaves {
         display: flex;
@@ -166,7 +169,8 @@
         min-height: 30px;
     }
 
-    /* ----------Projects---------- */
+
+    /* ---------- Main - Projects Section (desktop) ---------- */
 
     #projects-content {
         padding: 0 24px;
@@ -187,12 +191,16 @@
         min-width: 520px;
     }
 
+
     /* Relates to JavaScript - only this height when it is active */
+
     .project-box.active .box-bodytext {
         height: 504px;
     }
 
-    /* ----------CTA button---------- */
+
+    /* ---------- Main - CTA Button (desktop) ---------- */
+
     #projects-cta {
         padding: 140px 24px;
     }

@@ -1,5 +1,8 @@
 /* CSS Document */
 
+
+/* =============== Body =============== */
+
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -7,8 +10,8 @@ body {
     background-color: #F2EFDE;
 }
 
-/* ------------------------------------------------------------------------------------------------------- */
-/* Fonts and headlines */
+
+/* =============== Fonts and headlines ===============*/
 
 /* H1 text - title*/
 h1 {
@@ -46,7 +49,7 @@ h4 {
     margin: 0;
 }
 
-/* Body text */
+/* Body text - paragraph */
 p {
     font-size: 15px;
     font-weight: 400;
@@ -56,7 +59,7 @@ p {
     margin: 0;
 }
 
-/* h5 text - bottom footer*/
+/* H5 text - bottom footer*/
 h5 {
     color: #F2EFDE;
     font-size: 12px;
@@ -75,15 +78,16 @@ h5 {
     margin: 0;
 }
 
+/* Links */
 a {
     text-decoration: none;
     color: inherit;
     line-height: 200%;
 }
 
-/* ------------------------------------------------------------------------------------------------------- */
 
-/* Header */
+/* =============== Header =============== */
+
 header {
     display: flex;
     justify-content: center;
@@ -144,12 +148,13 @@ header img {
     color: #247022;
 }
 
-/* ----------Menu point selected---------- */
+
+/* Menu point selected - desktop */
 #menu-selected h3 {
     color: #81C730;
 }
 
-/* Element with both .menu and .active classes */
+/* An element with both .menu and .active classes */
 /* .active is added through Javascript */
 .menu.active {
     display: flex;
@@ -165,11 +170,11 @@ header img {
     border-bottom: unset;
 }
 
-/* ------------------------------------------------------------------------------------------------------- */
 
-/* Call to action button */
+/* =============== Call to action button =============== */
+
 .cta-button {
-    /* Neutralize the default styles on the semantic tag button */
+    /* Neutralizes the default styles on the semantic tag 'button' */
     background: none;
     color: inherit;
     border: none;
@@ -200,9 +205,9 @@ header img {
     color: #F2EFDE;
 }
 
-/* ------------------------------------------------------------------------------------------------------- */
 
-/* Footer */
+/* =============== Footer =============== */
+
 footer {
     width: 100%;
 }
@@ -256,6 +261,7 @@ footer {
     display: none;
 }
 
+
 /* Bottom footer */
 #bottom-footer {
     display: flex;
@@ -283,13 +289,12 @@ footer {
 }
 
 
-/* ------------------------------------------------------------------------------------------------------- */
-
-/* Media Query - headerstyles, header and footer*/
+/* ======================================================================================================================== */
+/* =============== Media Query ===============*/
 
 @media only screen and (min-width: 992px) {
 
-    /* ----------Fonts and headlines---------- */
+    /* ---------- Fonts and headlines ---------- */
 
     h1 {
         font-size: 70px;
@@ -333,7 +338,7 @@ footer {
     }
 
 
-    /* ----------Header section---------- */
+    /* ---------- Header section ---------- */
 
     #menu-desktop {
         display: flex;
@@ -356,7 +361,8 @@ footer {
         height: 64px;
     }
 
-    /* ----------Footer section---------- */
+    
+    /* ---------- Footer section ---------- */
 
     #top-footer h4 {
         display: unset;
@@ -409,7 +415,8 @@ footer {
         display: flex;
     }
 
-    /* ----------CTA button---------- */
+
+    /* ---------- CTA button ---------- */
     .cta-button {
         max-width: 424px;
     }

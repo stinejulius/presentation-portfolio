@@ -1,7 +1,7 @@
 /* CSS Document */
 
 
-/* ----------Main Introduction---------- */
+/* =============== Main - Introduction Section =============== */
 
 main {
     overflow: hidden;
@@ -38,7 +38,7 @@ main {
 }
 
 
-/* ----------Main Introduction Path---------- */
+/* =============== Main - Introduction Path =============== */
 #front-page-content {
     display: flex;
     justify-content: center;
@@ -76,7 +76,7 @@ main {
     background: #DBD1AD;
     padding: 15px;
 
-    flex: 0 1 76.92%;
+    flex: 0 1 76.92%; /* grow, shrink, basis */
 }
 
 .fp-textbox h4 {
@@ -88,7 +88,8 @@ main {
     justify-content: flex-end;
 }
 
-/* ----------Front page call to action---------- */
+
+/* =============== Main - Front Page CTA =============== */
 
 #fp-call-to-action {
     display: flex;
@@ -103,7 +104,7 @@ main {
 }
 
 
-/* ----------Front page illustrations - mountains and path---------- */
+/* =============== Main - Introduction Path Section (mountains & path) =============== */
 
 #mountains {
     position: relative;
@@ -164,19 +165,19 @@ main {
     z-index: -15;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------------- */
 
-/* Media Query */
+/* ======================================================================================================================== */
+/* =============== Media Query ===============*/
 
 @media only screen and (min-width: 992px) {
 
-    /* ----------Introduction path and mountains for desktop---------- */
+    /* ---------- Main - Introduction Path Section (desktop) ---------- */
 
     #mountains-desktop {
         display: flex;
     }
 
-    /* Removes mobile mountains */
+    /* Removes mountains (mobile) */
     #mountains {
         display: none;
     }
@@ -190,7 +191,8 @@ main {
     }
 
 
-    /* ----------Introduction---------- */
+    /* ---------- Main - Introduction Section (desktop) ---------- */
+
     #introduction-headline h3 {
         width: 100%;
     }
@@ -211,7 +213,9 @@ main {
         padding: unset;
     }
 
-    /* ----------Front page content---------- */
+    
+    /* ---------- Main - Front Page Content Section (desktop) ---------- */
+
     #front-page-content {
         margin-top: 68px;
         margin-bottom: 140px;
@@ -222,7 +226,9 @@ main {
         padding: 0 24px;
     }
 
-    /* ----------Front page call to action---------- */
+
+    /* ---------- Main - Front Page CTA (desktop) ---------- */
+
     #fp-call-to-action {
         gap: 70px;
     }

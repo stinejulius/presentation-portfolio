@@ -17,7 +17,7 @@ function onMenuClick() {
     menuContent.classList.toggle("active");
 }
 
-// -------Makes the menu close when clicking outside-------
+// =============== Makes the menu close when clicking outside ===============
 
 // Adds EventListener, that listens to a "click" event on the document (the body from HTML)
 document.addEventListener("click", function (event) {

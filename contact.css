@@ -1,6 +1,8 @@
 /* CSS Document */
 
 
+/* =============== Main =============== */
+
 main {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -11,7 +13,7 @@ main {
 }
 
 
-/* Intro Contact section */
+/* =============== Main - Intro Contact Section =============== */
 
 #intro-contact {
     display: flex;
@@ -41,7 +43,7 @@ main {
 }
 
 
-/* Contact Box section */
+/* =============== Main - Contact Box Section =============== */
 
 #contact-box {
     display: flex;
@@ -77,7 +79,7 @@ main {
 }
 
 
-/* Picture */
+/* =============== Main - Contact Picture Section ===============*/
 
 #contact-picture {
     display: flex;
@@ -91,13 +93,14 @@ main {
     border-radius: 10px;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------------- */
 
-/* Media Query */
+/* ======================================================================================================================== */
+/* =============== Media Query ===============*/
 
 @media only screen and (min-width: 992px) {
 
-    /* ----------Main---------- */    
+    /* ---------- Main (desktop) ---------- */
+
     main {
         margin-top: unset;
         margin-bottom: unset;
@@ -107,10 +110,13 @@ main {
 
         background-image: url(assets/illustrations/flower-pattern.svg);
         background-position: top 0px left calc(50% + 103px);
+        /* left position - 50% is in the middle and then 103px to the right */
         background-repeat: repeat;
     }
 
-    /* ----------Intro Contacts Section---------- */
+
+    /* ---------- Main - Intro Contact Section (desktop) ---------- */
+
     #intro-contact {
         padding: 0 24px;
         gap: 140px;
@@ -126,7 +132,9 @@ main {
         max-width: 848px;
     }
 
-    /* ----------Contact Box Section---------- */
+
+    /* ---------- Main - Contact Box Section (desktop) ---------- */
+
     #contact-box>div {
         /* > means only 1 level in */
         padding: 24px 0;
@@ -144,7 +152,9 @@ main {
         gap: 24px;
     }
 
-    /* ----------Contact Picture Section---------- */
+
+    /* ---------- Main - Contact Picture Section (desktop) ---------- */
+
     #contact-picture {
         padding: 0 24px;
     }

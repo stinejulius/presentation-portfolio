@@ -1,7 +1,7 @@
 /* CSS Document */
 
 
-/* Intro About section */
+/* =============== Main - Intro About Section =============== */
 
 #intro-about {
     display: flex;
@@ -20,7 +20,7 @@
 }
 
 
-/* About text section */
+/* About Text Section within Intro About Section */
 
 #about-text-section {
     display: flex;
@@ -48,7 +48,7 @@
 }
 
 
-/* Flower decoration */
+/* =============== Main - About Flower Decoration Section =============== */
 
 .about-flower-decoration {
     display: flex;
@@ -65,7 +65,7 @@
 }
 
 
-/* Qualifications section */
+/* =============== Main - About Qualifications Section =============== */
 
 #about-qualifications {
     display: flex;
@@ -128,6 +128,7 @@
 }
 
 /* Active */
+/* Here .quali-top gets targeted if .qualification and .active is on an element above */
 .qualification.active .quali-top {
     border-bottom-left-radius: unset;
     border-bottom-right-radius: unset;
@@ -146,7 +147,7 @@
 }
 
 
-/* Hobbies section */
+/* =============== Main - Hobbies Section =============== */
 
 #about-hobbies {
     display: flex;
@@ -215,6 +216,7 @@
 }
 
 /* Active */
+/* Here .hobby-bodytext gets targeted if .about-hobby-box and .active is on an element above */
 .about-hobby-box.active .hobby-bodytext {
     display: flex;
 }
@@ -224,7 +226,9 @@
 }
 
 
-/* Call to action - button style is in base.css */
+/* =============== Main - CTA Section =============== */
+
+/* The specific style on button is in base.css */
 
 #about-cta {
     display: flex;
@@ -241,13 +245,14 @@
     gap: 15px;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------------- */
 
-/* Media Query */
+/* ======================================================================================================================== */
+/* =============== Media Query ===============*/
 
 @media only screen and (min-width: 992px) {
 
-    /* ----------Intro About---------- */
+    /* ---------- Main - Intro About Section (desktop) ---------- */
+
     #intro-about {
         margin-top: 280px;
         margin-bottom: 200px;
@@ -259,7 +264,9 @@
         max-width: 848px;
     }
 
-    /* ----------About Text Section---------- */
+
+    /* ---------- About Text Section within Intro About Section (desktop) ---------- */
+
     #about-text-section {
         padding: unset;
         gap: 80px;
@@ -276,7 +283,9 @@
         max-width: 848px;
     }
 
-    /* ----------About Flower Decoration Section---------- */
+
+    /* ---------- Main - About Flower Decoration Section (desktop) ---------- */
+
     .flowers {
         width: 100%;
         padding: 90px 0;
@@ -287,7 +296,9 @@
         height: 80px;
     }
 
-    /* ----------About Qualifications Section---------- */
+
+    /* ---------- Main - About Qualifications Section (desktop) ---------- */
+
     #about-qualifications {
         gap: 140px;
         padding: 0 24px;
@@ -332,7 +343,8 @@
         height: 27px;
     }
 
-    /* ----------About Hobbies---------- */
+
+    /* ---------- Main - Hobbies Section (desktop) ---------- */
 
     #about-hobbies {
         gap: 140px;
@@ -368,7 +380,9 @@
         height: 27px;
     }
 
-    /* ----------CTA Section---------- */
+
+    /* ---------- Main - CTA Section (desktop) ---------- */
+
     #about-cta {
         gap: 140px;
         padding: 140px 24px;
