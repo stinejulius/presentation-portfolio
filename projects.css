@@ -19,7 +19,7 @@
 }
 
 
-/* Leaf Band Section */
+/* Leaves Section */
 
 #leaves {
     display: none;
@@ -112,8 +112,30 @@
     cursor: pointer;
 }
 
+/* For video project */
+.project-box-image video {
+    height: 544px;
+    background-color: #F2EFDE;
+    border-radius: 10px;
+}
+
+/* For animation project */
+.project-animation-waterdrop {
+    width: 750px;
+    height: 544px;
+    background: url('assets/images/project-animation.png') 0 0 no-repeat;
+    animation: project-animation-waterdrop 2.5s steps(18) infinite;
+    background-color: #F2EFDE;
+    border-radius: 10px;
+}
+
+@keyframes project-animation-waterdrop {
+    0% {background-position: -175px;}
+    100% {background-position: -13675px;}
+}
+
     /* Active */
-    /* Here .box.bodytext gets targeted if .project-box and .active is on an element above */
+    /* Here .box-bodytext gets targeted if .project-box and .active is on an element above */
 .project-box.active .box-bodytext {
     display: flex;
 }
