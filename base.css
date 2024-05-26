@@ -353,6 +353,10 @@ footer {
         display: none;
     }
 
+    #header-menu-content-js {
+        display: none;
+    }
+
     header {
         padding: 0 24px;
     }

@@ -7,7 +7,7 @@ main {
     overflow: hidden;
 }
 
-¨ #introduction {
+#introduction {
     display: flex;
     flex-direction: column;
     gap: 112px;
@@ -21,7 +21,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    padding-top: 120px;
 }
 
 #introduction-headline {
@@ -29,7 +28,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding-top: 112px;
 }
 
 #introduction-headline h3 {
@@ -145,9 +143,9 @@ main {
     justify-content: center;
     position: absolute;
     top: 274px;
-    flex-shrink: 0;
     z-index: -10;
     width: 100%;
+    overflow: hidden;
 }
 
 /* Path for desktop */
@@ -161,7 +159,7 @@ main {
     display: none;
     position: absolute;
     left: -558px;
-    top: -130px;
+    top: -71px;
     z-index: -15;
 }
 
@@ -190,6 +188,10 @@ main {
         display: unset;
     }
 
+    .fp-textbox {
+        padding: 24px;
+    }
+
 
     /* ---------- Main - Introduction Section (desktop) ---------- */
 
@@ -198,9 +200,7 @@ main {
     }
 
     #introduction {
-        padding: 400px 0 280px 0;
-        display: flex;
-        flex-direction: column;
+        margin: 400px 0 280px 0;
         gap: 212px;
     }
 
@@ -213,7 +213,7 @@ main {
         padding: unset;
     }
 
-    
+
     /* ---------- Main - Front Page Content Section (desktop) ---------- */
 
     #front-page-content {
